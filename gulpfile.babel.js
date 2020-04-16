@@ -58,22 +58,6 @@ gulp.task("js", () => {
   return buildJS(target);
 });
 
-// gulp.task("styles", () => {
-//   return gulp
-//     .src("src/styles/**/*.scss")
-//     .pipe($.plumber())
-//     .pipe(
-//       $.sass
-//         .sync({
-//           outputStyle: "expanded",
-//           precision: 10,
-//           includePaths: ["."],
-//         })
-//         .on("error", $.sass.logError)
-//     )
-//     .pipe(gulp.dest(`build/${target}/styles`));
-// });
-
 gulp.task("manifest", () => {
   return gulp
     .src("./manifest.json")
@@ -122,21 +106,13 @@ function pipe(src, ...transforms) {
 function mergeAll(dest) {
   return merge(
     pipe("./src/icons/**/*", `./build/${dest}/icons`),
-    //pipe(['./src/_locales/**/*'], `./build/${dest}/_locales`),
     pipe([`./src/images/${target}/**/*`], `./build/${dest}/images`),
     pipe(["./src/images/shared/**/*"], `./build/${dest}/images`)
-    //pipe(["./src/**/*.html"], `./build/${dest}`)
   );
 }
 
 function buildJS(target) {
-  const files = [
-    //"background.js",
-    "contentscript.js",
-    //"options.js",
-    //"popup.js",
-    //"livereload.js",
-  ];
+  const files = ["contentscript.js"];
 
   let tasks = files.map((file) => {
     return browserify({
