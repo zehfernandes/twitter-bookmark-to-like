@@ -2,6 +2,11 @@
 
 ![Example of the new nav](https://www.dropbox.com/s/cvrprx9h484g1fk/artwork.png?raw=1)
 
+## Download
+
+→ Chrome:  https://chrome.google.com/webstore/detail/afbpglpicejdcecficlmijbjcdehnneh <br/>
+→ Firefox: https://addons.mozilla.org/en-US/firefox/addon/twitter-bookmarks-likes/
+
 ## Installation
 
 1. Run `npm install`
