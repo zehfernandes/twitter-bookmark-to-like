@@ -42,5 +42,17 @@
     "preprocessify": "^1.0.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "main": "gulpfile.babel.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zehfernandes/twitter-bookmark-to-like.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zehfernandes/twitter-bookmark-to-like/issues"
+  },
+  "homepage": "https://github.com/zehfernandes/twitter-bookmark-to-like#readme"
 }
