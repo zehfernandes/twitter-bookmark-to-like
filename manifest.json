@@ -1,0 +1,18 @@
+{
+  "name": "Twitter - Replace bookmarks with likes",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "description": "If you are old school and keep using like to favorite tweets, an extension for you",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["scripts/contentscript.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
